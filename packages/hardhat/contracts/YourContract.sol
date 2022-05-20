@@ -1,11 +1,12 @@
 pragma solidity >=0.8.0 <0.9.0;
 //SPDX-License-Identifier: MIT
-
+import "./token/ERC721.sol";
+import "./token/ERC1155.sol";
 import "hardhat/console.sol";
 // import "@openzeppelin/contracts/access/Ownable.sol"; 
 // https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
-contract YourContract {
+contract YourContract is ERC721, ERC1155 {
 
   event SetPurpose(address sender, string purpose);
 
